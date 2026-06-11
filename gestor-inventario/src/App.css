@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f1f5f9;
+  font-family: Arial, sans-serif;
+  color: #1e293b;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+}
+
+.card {
+  width: 600px;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #1e293b;
+}
+
+.subtitulo {
+  text-align: center;
+  color: #94a3b8;
+  font-size: 13px;
+  margin-top: -12px;
+}
+
+.formulario {
+  display: flex;
+  gap: 10px;
+}
+
+.formulario input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+  color: #1e293b;
+  font-size: 14px;
+}
+
+.formulario button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #3b82f6;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.formulario button:hover {
+  background: #2563eb;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+th {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 2px solid #e2e8f0;
+  color: #64748b;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #f1f5f9;
+  color: #1e293b;
+}
+
+.input-stock {
+  width: 80px;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+  color: #1e293b;
+  font-size: 14px;
+}
+
+.btn-eliminar {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background: #fee2e2;
+  color: #dc2626;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.btn-eliminar:hover {
+  background: #fecaca;
+}
+
+.vacio {
+  text-align: center;
+  color: #94a3b8;
+  font-size: 14px;
+  padding: 20px 0;
+}
+
+.historial .label {
+  font-size: 12px;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.historial ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+.historial li {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #475569;
+}
