@@ -12,7 +12,7 @@ function PresentationCard() {
         Hernández
       </h1>
 
-      <h2>Desarrollador Frontend</h2>
+      <h1>Desarrollador Frontend</h1>
 
       <p>
         Estudiante apasionado por el desarrollo web con
