@@ -5,13 +5,10 @@ import TweetForm from "../components/TweetForm";
 import { useAuth } from "../context/AuthContext";
 
 const Home = () => {
-  const [tweets, setTweets] = useState([]);
   const { user } = useAuth();
-
-  useEffect(() => {
-    const stored = JSON.parse(localStorage.getItem("tweets")) || [];
-    setTweets(stored);
-  }, []);
+  const [tweets, setTweets] = useState(() => {
+    return JSON.parse(localStorage.getItem("tweets")) || [];
+  });
 
   useEffect(() => {
     localStorage.setItem("tweets", JSON.stringify(tweets));
