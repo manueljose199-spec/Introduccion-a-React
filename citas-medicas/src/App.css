@@ -1,0 +1,114 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #f1f5f9;
+  font-family: Arial, sans-serif;
+  color: #1e293b;
+}
+
+.navbar {
+  background: white;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 0 32px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-brand { font-size: 18px; font-weight: 700; }
+
+.navbar-links { display: flex; gap: 24px; }
+
+.navbar-links a {
+  text-decoration: none;
+  color: #64748b;
+  font-size: 14px;
+  padding: 6px 0;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar-links a:hover { color: #1e293b; }
+.navbar-links a.active { color: #3b82f6; border-bottom-color: #3b82f6; }
+
+.main-content { padding: 32px; max-width: 900px; margin: 0 auto; }
+
+.page { display: flex; flex-direction: column; gap: 24px; }
+
+h2 { font-size: 22px; }
+.subtitulo { color: #64748b; font-size: 14px; margin-top: -16px; }
+
+.hero {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 15px;
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.hero h1 { font-size: 28px; }
+.hero p { color: #64748b; }
+.hero-buttons { display: flex; gap: 12px; justify-content: center; margin-top: 8px; }
+
+.btn { padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-size: 14px; text-decoration: none; display: inline-block; }
+.btn-primary { background: #3b82f6; color: white; }
+.btn-primary:hover { background: #2563eb; }
+.btn-secondary { background: #f1f5f9; color: #1e293b; border: 1px solid #e2e8f0; }
+.btn-secondary:hover { background: #e2e8f0; }
+
+.cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+
+.info-card, .doctor-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.info-card .icon { font-size: 28px; }
+.info-card h3 { font-size: 16px; }
+.info-card p { font-size: 13px; color: #64748b; }
+
+.doctor-card { align-items: center; text-align: center; }
+.doctor-avatar { width: 52px; height: 52px; background: #dbeafe; color: #1e40af; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 22px; font-weight: 700; }
+.doctor-card h3 { font-size: 15px; }
+.especialidad { color: #3b82f6; font-size: 13px; }
+.horario { color: #94a3b8; font-size: 12px; }
+
+.citas-lista { display: flex; flex-direction: column; gap: 12px; }
+.cita-row { background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 16px 20px; display: flex; justify-content: space-between; align-items: center; }
+.cita-doctor { font-weight: 600; font-size: 15px; }
+.cita-info { font-size: 13px; color: #64748b; margin-top: 4px; }
+.cita-actions { display: flex; align-items: center; gap: 12px; }
+
+.badge { padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 500; }
+.badge-green { background: #dcfce7; color: #166534; }
+.badge-yellow { background: #fef9c3; color: #854d0e; }
+
+.back-link { font-size: 13px; color: #3b82f6; text-decoration: none; }
+.back-link:hover { text-decoration: underline; }
+
+.detalle-card { background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 28px; display: flex; flex-direction: column; gap: 20px; }
+.detalle-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.detalle-item { display: flex; flex-direction: column; gap: 4px; }
+.detalle-item span { font-size: 12px; color: #94a3b8; text-transform: uppercase; letter-spacing: 1px; }
+.detalle-item strong { font-size: 15px; }
+
+.notas { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; }
+.notas .label { font-size: 12px; color: #94a3b8; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
+.notas p { font-size: 14px; color: #475569; }
+
+.form-card { background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 28px; }
+.form-cita { display: flex; flex-direction: column; gap: 12px; }
+.form-cita label { font-size: 13px; color: #64748b; font-weight: 500; }
+.form-cita input, .form-cita select { padding: 10px; border-radius: 8px; border: 1px solid #cbd5e1; background: #f8fafc; color: #1e293b; font-size: 14px; }
+
+.success-box { background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 40px; display: flex; flex-direction: column; gap: 12px; align-items: center; }
+
+.vacio { text-align: center; color: #94a3b8; font-size: 14px; padding: 20px 0; }
